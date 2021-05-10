@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+	body{
+		background:white;
+		font-weight: bold;
+		font-size:14px;
+		text-align:justify;
+		margin:0px;
+	}
+	.nav{
+		border:3px solid none;
+		margin:1% 2% 3% 2%;
+		padding:5% 10% 8% 10%;
+		background-color:#8888B6;
+		box-shadow: 5px 5px 3px lightgray;
+		border-radius:10px;
+	}
+	ul{
+		margin:0% 0% 2% -10%;
+	}
+	.nav li{
+      margin:2% 2% 2% 2%;
+      list-style: none;
+      padding:2% 2% 2% 2%;
+      box-shadow:2px 3px 0px lightgray;
+      border-radius:40px;
+      font-weight: bold;
+      text-align: center;
+      float:left;
+      color:white;
+      background-color:white;
+      font-size:1rem; 
+    }
+    .nav li:hover{
+      background-color:lightblue;
+      color:pink;
+	}
+	
+	.logo{
+		border:3px solid none;
+		margin:-7.7% 0% 0% -15%;
+		padding:5% 5% 5% 5%;
+		float:left;
+		border-radius:80px;
+		background-color:#8888B6;
+	}
+	.cards{
+			display:flex;
+			flex-wrap:wrap;
+			flex-basis: 100%;
+			margin:0.5% 1.5% 0% 2.5%;
+			clear: both;
+			border:5px solid none;
+			border-radius:20px;
+			box-shadow: 5px 5px 5px black;
+		}
+		.card{
+			margin:1.5% 1.2% 5% 1.2%;
+			padding:0% 0% 10% 0%;
+			border:5px solid none;
+	        border-radius: 50px;
+	        box-shadow:5px 0px 0px indigo;
+			
+		}
+		.card img{
+      height:100%;
+      width:100%;
+      border:3px solid indigo;
+	  border-radius: 50px;
+		}
+		.card img:hover{
+			transform: scale(1.5);
+		}
+		.cards li:hover{
+			background-color:brown;
+			color:pink;
+		}
+	#add{
+		background-color:lightblue;
+		padding:8px 10px 4px 12px;
+		margin:50px 0px 0px 75px;
+		font-size:18px;
+		border-radius:5px;
+	}
+	#minus{
+		font-size:18px;
+		background-color:lightblue;
+		padding:7px 10px 5px 12px;
+		border-radius:5px;
+	}
+	#display{
+		width:14px;
+		margin:0px 0px 0px 0px;
+		padding:10px 0px 5px 10px;
+	}
+	.footer{
+		border:3px solid none;
+		margin:2% 0% 0% 0%;
+		padding:5% 0% 15% 0%;
+		clear:both;
+		background-color:#8888B6;
+		box-shadow: 5px 5px 5px lightgray;
+		border-top-right-radius:50px;
+		border-top-left-radius:50px;
+	}
+	</style>
+<title>J_Lawn-Tech_world</title>
+</head>
+<body>
+<nav class="nav">
+<section class="logo"></section>
+<ul><li><a href="jlawn.html">Home</a></li>
+	<li><a href="item.html">Menu</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+<header></header>
+</nav>
+
+<section class="cards">
+<div class="card" style="width:18rem;">
+  <img src="lap3.png"  class="card-img-top" alt="...">
+  <div class="card-body">
+  <input type="button" id="add" value="+" onclick="integrate()">
+  <input id="display" type="text" value="0">
+  <input type="button" id="minus" value="-" onclick="diff()">
+  </div></div>
+
+<div class="card" style="width:18rem;">
+  <img src="lap7.png"  class="card-img-top" alt="...">
+  <input type="button" id="add" value="+" onclick="integrate()">
+  <input id="display" type="text" value="0">
+  <input type="button" id="minus" value="-" onclick="diff()">
+  <div class="card-body">
+  </div></div>
+
+<div class="card" style="width:18rem;">
+  <img src="lap5.png"  class="card-img-top" alt="...">
+  <div class="card-body">
+  </div></div>
+
+<div class="card" style="width:18rem;">
+  <img src="lap4.png"  class="card-img-top" alt="...">
+  <div class="card-body">
+  </div></div>
+
+<div class="card" style="width:18rem;">
+  <img src="lap6.png"  class="card-img-top" alt="...">
+  <div class="card-body">
+  </div></div>
+
+<div class="card" style="width:18rem;">
+  <img src="lap1.png"  class="card-img-top" alt="...">
+  <div class="card-body">
+  </div></div>
+
+<div class="card" style="width:18rem;">
+  <img src="dell.gif"  class="card-img-top" alt="...">
+  <div class="card-body">
+  </div></div>
+
+<div class="card" style="width:18rem;">
+  <img src="asus.gif"  class="card-img-top" alt="...">
+  <div class="card-body">
+  </div></div>
+
+<div class="card" style="width:18rem;">
+  <img src="hp.gif"  class="card-img-top" alt="...">
+  <div class="card-body">
+  </div></div>
+
+<div class="card" style="width:18rem;">
+  <img src="lap4.png"  class="card-img-top" alt="...">
+  <div class="card-body">
+  </div></div>
+
+<div class="card" style="width:18rem;">
+  <img src="lap4.png"  class="card-img-top" alt="...">
+  <div class="card-body">
+  </div></div>
+
+<div class="card" style="width:18rem;">
+  <img src="lap5.png"  class="card-img-top" alt="...">
+  <div class="card-body">
+  </div></div> 
+
+<div class="card" style="width:18rem;">
+  <img src="lap9.png"  class="card-img-top" alt="...">
+  <div class="card-body">
+  </div></div>
+
+<div class="card" style="width:18rem;">
+  <img src="lap8.png"  class="card-img-top" alt="...">
+  <div class="card-body">
+  </div></div>
+
+<div class="card" style="width:18rem;">
+  <img src="lap7.png"  class="card-img-top" alt="...">
+  <div class="card-body">
+  </div></div>
+
+<div class="card" style="width:18rem;">
+  <img src="dell.gif"  class="card-img-top" alt="...">
+  <div class="card-body">
+  </div></div>
+
+<div class="card" style="width:18rem;">
+  <img src="asus.gif"  class="card-img-top" alt="...">
+  <div class="card-body">
+  </div></div>
+	
+<div class="card" style="width:18rem;">
+  <img src="lap1.png"  class="card-img-top" alt="...">
+  <div class="card-body">
+  </div></div>
+
+<div class="card" style="width:18rem;">
+  <img src="dell.gif"  class="card-img-top" alt="...">
+  <div class="card-body">
+  </div></div>
+
+<div class="card" style="width:18rem;">
+  <img src="asus.gif"  class="card-img-top" alt="...">
+  <div class="card-body">
+  </div></div>
+
+</section>
+<section>
+
+<section>
+
+</section>
+<section>
+	
+</section>
+<footer class="footer">
+	<form>
+	</form>
+</footer>
+
+<script type="text/javascript">
+var add = document.getElementById("add");
+var minus = document.getElementById("minus");
+var display = document.getElementById("display");
+var x = 0;
+
+
+function diff(value){
+ if(display.value > 0){
+ 	display.value--;
+ 	
+ }else{
+ 	x = 0;
+ }
+}
+
+function integrate(value){
+ if(x <= 0){
+ 	display.value++;
+ 	
+ }else{
+ 	x = 0;
+ }
+}
+
+</script>
+</body>
+</html>
