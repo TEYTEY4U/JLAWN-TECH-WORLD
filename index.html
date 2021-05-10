@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+	body{
+		background:white;
+		font-weight: bold;
+		font-size:18px;
+		text-align:justify;
+		margin:0px;
+	}
+	.nav{
+		border:3px solid none;
+		margin:-5% 2% 3% 2%;
+		padding:7% 10% 0% 10%;
+		background-size:contain;
+		background-image:url("bg7.png");
+		box-shadow: 12px 0px 3px #8888B6;
+		border-radius:10px;
+		border-bottom-right-radius:3500px;
+		opacity: 0.8;
+	}
+	ul{
+		margin:-3% 0% 2% -10%;
+	}
+	.nav li{
+      margin:2% 2% 2% 2%;
+      list-style: none;
+      padding:2% 2% 2% 2%;
+      box-shadow:2px 3px 0px #8888B6;
+      border-radius:40px;
+      font-weight: bold;
+      text-align: center;
+      float:left;
+      color:white;
+      background-color:white;
+      font-size:1rem; 
+    }
+    .nav li:hover{
+      background-color:lightgray;
+      opacity:0.6;
+      color:white;
+	}
+	.aside3{
+		border:3px solid none;
+		margin:-46% 2% 3% 65%;
+		padding:5% 25% 38% 10%;
+		float: right;
+		background-color:#8888B6;
+		box-shadow: 5px 5px 3px lightgray;
+		border-radius:10px;
+	}
+	.logo{
+		border:3px solid none;
+		margin:-7.7% 0% 0% -15%;
+		padding:5% 5% 5% 5%;
+		float:left;
+		border-radius:80px;
+		background-color:;
+	}
+	.search{
+		clear:both;
+		margin:-7% 0px 3% 0%;
+			
+		}
+		.search img{
+			height:55px;
+			width:50px;
+			margin:0px 0px -22px -58px;
+			border-radius:8px;
+		}
+		.search input{
+			min-width:25%; 
+			width:35%;
+			height:50px;
+			padding:8% auto;
+			border:solid 4px indigo;
+			border-radius:18px;
+			font-size:24px;
+			}
+		.lap1{
+			height:350px;
+			width:45%;
+		}
+		.img{
+			margin-left:10%;
+			margin-right:10%;
+			padding:0% 2% 5% 2%;
+			 clear:both;
+			 float:center;
+		}
+	.aside1{
+		border:3px solid none;
+		margin:0% 60% 3% 2%;
+		padding:5% 20% 15% 38%;
+		background-color:black;
+		box-shadow: 5px 5px 3px lightgray;
+		border-radius:10px;
+		clear: both;
+	}
+		.aside2{
+		border:3px solid none;
+		margin:1% 60% 3% 2%;
+		padding:5% 20% 15% 38%;
+		background-color:black;
+		box-shadow: 5px 5px 3px lightgray;
+		border-radius:10px;
+	}
+	.article{
+		border:3px solid none;
+		margin:2% 2% 0% 2%;
+		padding:5% 0% 5% 0%;
+		clear:both;
+		background-color:black;
+		box-shadow: 5px 5px 3px lightgray;
+		border-radius:10px;
+	}
+	.account{
+		border:3px solid none;
+		margin:2% 15% 0% 15%;
+		padding:5% 0% 0% 0%;
+		clear:both;
+		background-color:white;
+		box-shadow: 5px 5px 5px lightgray;
+		border-top-right-radius:50px;
+		border-top-left-radius:50px;
+	}
+	.account input{
+		border:4px solid indigo;
+		border-radius:10px;
+		width:100%;
+		height:30px;
+		margin:3% 0% 3% 0%;
+	}
+    label{
+		margin:3% 0% 6% 0%;
+	}
+	#btns{
+	width:21%;
+	height:40px;
+	margin-top:10px;
+	background-color:indigo;
+	color:white;
+	border-radius:5px;
+	}
+	.lbg{
+	clear:both;
+	width:36%;
+	height:405px;
+	margin:0% 0% 0% 5%;
+	}
+	form{
+		clear:both;
+		float:right;
+		margin:0% 20% 0% 0%;
+	}
+	.acct{
+	position: absolute;
+	margin-left:78%;
+	margin-top:3.3%;
+	font-weight:bold;	
+	}
+	.reg{
+		display:none;
+		position:sticky;
+		z-index:9999;
+		top:0;
+		}
+		.login{
+		display:none;
+		position:sticky;
+		z-index:9999;
+		top:0;
+		}
+	#login{
+	font-size:100%;
+	position:relative;
+	clear:both;
+	margin-right:110%;
+	float:right;
+	color:indigo;
+	}
+	#login:hover,#reg:hover{
+	box-shadow:0px 1px 0px indigo;
+	color:indigo;
+	}
+	#reg{
+	font-size:100%;
+	clear:both;
+	position:relative;
+	margin-top:-55%;
+	float:right;
+	color:indigo;
+	}
+	</style>
+<title>J_Lawn-Tech_world</title>
+</head>
+<body>
+
+<nav class="nav">
+<section class="logo"></section>
+<ul><li><a href="jlawn.html">Home</a></li>
+	<li><a href="item.html">Menu</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+<div class="acct">
+<p  id="login" onclick="(changed())">Login</p>
+<p  id="reg" onclick="(changes())" >| Register</p>
+</div>
+
+<div class="search">
+	<input type="text" placeholder="search">
+	<img src="search.png"/>
+</div>
+<header></header>
+</nav>
+
+<div class="reg">
+    <section class="account">
+    <img src="bg2.png" class="lbg">
+   
+      <form>
+      	 <h4 align="center">SIGN UP</h4>
+      <label>Username</label><br/><input maxlength="15" type="text" placeholder="Firstname" name="username"><br/>
+      <label for="staticEmail">Email</label><br/><input type="@mailto" name="email" placeholder="Email" value="email@example.com"><br/>
+      <label>Password</label><br/><input maxlength="8" type="password" placeholder="Password" name="password" required><br/>
+      <button id="btns" type="submit" >LOGIN</button><br/>
+      <p align="center">you already have an account <span style="color:indigo">Here</span></p>
+    </form>
+    </section>
+</div>
+
+<div class="login">
+  <section class="account">
+    <img src="bg2.png" class="lbg">
+   
+      <form>
+      	 <h4 align="center">Login</h4>
+      <label>Username</label><br/><input maxlength="15" type="text" placeholder="Firstname" name="username"><br/>
+      <label>Password</label><br/><input maxlength="8" type="password" placeholder="Password" name="password" required><br/>
+      <button id="btns" type="submit" style="width:30%;" >LOGIN</button><br/>
+      <p align="center">create an account <span style="color:indigo">Here</span></p>
+    </form>
+    </section>
+</div>
+
+
+<div class="img">
+<img src="lap1.png" class="lap1">
+<img src="lap5.png" class="lap1">
+<img src="dell.gif" class="lap1">
+<img style="margin-left:9%;" src="asus.gif" class="lap1">
+</div>
+ 
+<section>
+<aside class="aside1"></aside> 
+<aside class="aside2"></aside>
+<aside class="aside3"></aside>
+</section>
+<section>
+	<article class="article">
+		
+	</article>
+</section> 
+<section>
+	<h1></h1>
+</section>
+<section>
+	<article class="article">
+		
+	</article>
+</section>
+<footer class="footer">
+	<form>
+	</form>
+</footer>
+
+<script type="text/javascript">
+	var login = document.querySelector(".login");
+	var reg = document.querySelector(".reg");
+  var logins = document.getElementById("login");
+  var regs = document.getElementById("reg");
+
+	function changes(){
+ reg.style.display = "block";
+ login.style.display = "none";
+ regs.style.display = "none";
+ logins.style.display = "block";
+}
+function changed(){
+ login.style.display = "block";
+ reg.style.display = "none";
+ logins.style.display = "none";
+ regs.style.display = "block";
+}
+</script>
+</body>
+</html>
